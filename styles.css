@@ -1937,3 +1937,16 @@ section.visible {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 768px) {
+
+  .easter-egg {
+    position: fixed;
+    top: max(15px, env(safe-area-inset-top));
+    right: 15px;
+    left: auto;
+    bottom: auto;
+    z-index: 2000;
+  }
+
+}
