@@ -1719,3 +1719,74 @@ section.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Fontes menores em celulares */
+@media screen and (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .timeline-category-title {
+    font-size: 1rem;
+  }
+
+  .timeline-title {
+    font-size: 1.1rem;
+  }
+
+  .timeline-place,
+  .timeline-desc,
+  .timeline-hover-content p,
+  .timeline-hover-content li {
+    font-size: 0.9rem;
+  }
+
+  .skill-category-title {
+    font-size: 1.2rem;
+  }
+
+  .skill-name,
+  .skill-percentage {
+    font-size: 0.9rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-desc {
+    font-size: 0.85rem;
+  }
+
+  .modal-title,
+  .access-title {
+    font-size: 1.5rem;
+  }
+
+  .modal-desc,
+  .access-text {
+    font-size: 0.9rem;
+  }
+
+  .terminal-title {
+    font-size: 1rem;
+  }
+
+  .terminal-input,
+  .submit-btn {
+    font-size: 0.9rem;
+  }
+}
