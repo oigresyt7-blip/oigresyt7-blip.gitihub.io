@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sergio Bergê Portfolio | Engenheiro da Computação</title>
+    <link rel="icon" type="image/png" href="hacker.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Celebration Container -->
+    <div class="celebration" id="celebration"></div>
+
+    <!-- Hidden Navigation -->
+    <nav class="hidden-nav">
+      <div class="nav-icon" data-title="Home">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="nav-icon" data-title="About">
+        <i class="fas fa-user-secret"></i>
+      </div>
+      <div class="nav-icon" data-title="Timeline">
+        <i class="fas fa-stream"></i>
+      </div>
+      <div class="nav-icon" data-title="Skills">
+        <i class="fas fa-cogs"></i>
+      </div>
+      <div class="nav-icon" data-title="Work">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <div class="nav-icon" data-title="Testimonial">
+        <i class="fas fa-quote-right"></i>
+      </div>
+      <div class="nav-icon" data-title="Contact">
+        <i class="fas fa-terminal"></i>
+      </div>
+    </nav>
+
+    <!-- Easter Egg Trigger -->
+    <div class="easter-egg">
+      <i class="fas fa-question"></i>
+    </div>
+
+    <!-- Secret Modal -->
+    <div class="secret-modal">
+      <div class="modal-content">
+        <div class="close-modal">
+          <i class="fas fa-times"></i>
+        </div>
+        <h2>Segredo desbloqueado</h2>
+        <p>
+            Você encontrou minha verdadeira especialidade: fortalecer a segurança dos dados e garantir a integridade das informações.        </p>
+        <p>
+          Levo essa dedicação e atenção aos detalhes para cada projeto, assegurando a integridade, a confidencialidade e a disponibilidade das informações.
+        </p>
+        <p class="glitch" data-text="Congratulations!">Parabéns!</p>
+        <div class="details-btn-container">
+          <button class="project-details-btn" id="secret-close">
+                Continue explorando
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Access Denied Modal -->
+    <div class="access-modal">
+      <div class="access-content">
+        <h2 class="access-title">ACESSO NEGADO</h2>
+        <p class="access-text">
+          Área protegida. Somente usuários autorizados podem acessar este conteúdo.<br />Inicie a autenticação pelo terminal principal.
+        </p>
+        <button class="access-btn">Validar Acesso</button>
+      </div>
+    </div>
+
+    <!-- Hidden Password Section -->
+    <div class="hidden-section" id="password-section">
+      <div class="hidden-section-content">
+        <h2>Acesso restrito</h2>
+        <p>Digite o código secreto para prosseguir:</p>
+        <input
+          type="password"
+          class="password-input"
+          placeholder="Enter code"
+        />
+        <p class="password-hint">
+          Dica: Envie uma mensagem através do formulário de contato para receber o código.
+        </p>
+        <div>
+          <button class="submit-btn" id="submit-password">Enviar</button>
+          <button class="project-details-btn" id="close-password">
+            Cancelar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Modals -->
+    <div class="project-modal" id="project1-modal">
+      <div class="modal-content">
+        <div class="close-modal">
+          <i class="fas fa-times"></i>
+        </div>
+        <h2 class="modal-title">Engenharia de Processos – Honda</h2>
+        <p class="modal-desc">
+                      Responsável pela atualização e otimização dos processos internos da empresa,
+                       promovendo maior eficiência operacional e qualidade nas atividades. 
+                       Realizei o remapeamento e a padronização dos processos organizacionais, 
+                       conduzi auditorias internas, modeleis fluxogramas utilizando o Bizagi
+                       e implementei práticas alinhadas à LGPD, fortalecendo a segurança das informações
+                       e a conformidade com a legislação.
+
+        </p>
+        <ul class="modal-features">
+          <li>Segurança da Informação e Adequação à LGPD</li>
+          <li>Auditoria de Processos e Gestão de Riscos</li>
+          <li>Modelagem e Padronização de Processos com Bizagi</li>
+          <li>Gestão e Melhoria de Processos Organizacionais</li>
+        </ul>
+        <button class="project-details-btn close-btn">Close Project</button>
+      </div>
+    </div>
+
+    <div class="project-modal" id="project2-modal">
+      <div class="modal-content">
+        <div class="close-modal">
+          <i class="fas fa-times"></i>
+        </div>
+        <h2 class="modal-title">Cardápio Digital Interativo</h2>
+        <p class="modal-desc">
+Desenvolvimento de um cardápio digital responsivo, projetado para facilitar a visualização de produtos e agilizar o processo de pedidos. A solução conta com integração direta ao WhatsApp, permitindo que os clientes enviem seus pedidos de forma rápida e prática, proporcionando uma experiência moderna e acessível em qualquer dispositivo.
+        </p>
+        <ul class="modal-features">
+          <li>Integração direta com WhatsApp para envio de pedidos</li>
+          <li>Design responsivo para celulares, tablets e desktops</li>
+          <li>Interface intuitiva e otimizada para experiência do usuário</li>
+          <li>Atualização rápida de produtos, preços e categorias</li>
+        </ul>
+        <button class="project-details-btn close-btn">Close Project</button>
+      </div>
+    </div>
+
+    <div class="project-modal" id="project3-modal">
+      <div class="modal-content">
+        <div class="close-modal">
+          <i class="fas fa-times"></i>
+        </div>
+        <h2 class="modal-title">Sistema Help Desk Corporativo</h2>
+        <p class="modal-desc">
+          Desenvolvimento de um sistema de Help Desk para gerenciamento de chamados e suporte técnico, permitindo o registro, acompanhamento e resolução de solicitações de forma organizada. A plataforma centraliza o atendimento, melhora a comunicação entre usuários e equipe de suporte e contribui para maior agilidade na resolução de problemas.
+        </p>
+        <ul class="modal-features">
+          <li>Abertura e acompanhamento de chamados em tempo real</li>
+          <li>Controle de status e prioridades de atendimento</li>
+          <li>Interface responsiva e intuitiva para usuários e técnicos</li>
+          <li>Histórico completo de solicitações e soluções</li>
+        </ul>
+        <button class="project-details-btn close-btn">Close Project</button>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title glitch" data-text="Building a safer digital future.">
+          Construindo um futuro digital mais seguro.
+        </h1>
+        <p class="hero-subtitle typewriter">
+          Protegendo o mundo digital, um dado de cada vez...
+        </p>
+        <button class="explore-btn">Entrar na Zona Restrita</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title fade-in">Por trás do código</h2>
+      <div class="about-content">
+        <div class="profile-img-container fade-in">
+          <img
+            class="profile-img"
+            src="img_profile.jpeg"
+            alt="Profile Image"
+          />
+        </div>
+        <div class="bio-text fade-in">
+          <p>
+            Em um mundo movido por dados, proteger informações é tão importante quanto desenvolvê-las. Minha atuação está voltada para a segurança da informação, governança de dados e conformidade digital, aplicando tecnologia para reduzir riscos e fortalecer a proteção dos ativos mais valiosos de uma organização.
+          </p>
+          <p>
+            Com conhecimentos em Engenharia da Computação, LGPD e desenvolvimento de sistemas, 
+            busco criar ambientes mais seguros, processos mais confiáveis e soluções alinhadas às melhores práticas de segurança e privacidade. 
+          </p>
+          <p>
+            Acredito que a segurança não deve ser apenas uma camada de proteção, mas parte da estratégia tecnológica de qualquer empresa.
+          </p>
+          <p class="monospace">
+            > Current focus: Segurança da Informação, Proteção de Dados, LGPD, Governança de Dados e Gestão de Riscos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline">
+      <h2 class="section-title fade-in">Crônicas do Progresso</h2>
+      <div class="timeline-container fade-in">
+        <div class="timeline">
+          <!-- Timeline Connector -->
+          <div class="timeline-connector"></div>
+
+          <!-- Education Timeline Items -->
+          <div class="timeline-category">
+            <div class="timeline-category-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="timeline-category-title">Educação</h3>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot" data-year="2022"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2022 - Em Andamento</div>
+              <h3 class="timeline-title">Bacharel em Engenharia da Computação</h3>
+              <div class="timeline-place">Intituto Federal do Maranhão</div>
+              <p class="timeline-desc">
+                Formação voltada para desenvolvimento de sistemas, segurança da informação, 
+                governança de dados e tecnologias computacionais.
+              </p>
+              <div class="timeline-hover-content">
+                <p>
+                  Desenvolvimento de competências em programação, arquitetura de computadores, redes,
+                   banco de dados e engenharia de software.
+                </p>
+                <ul>
+                  <li>Ênfase em áreas como Engenharia de Software, Redes de Computadores, Banco de Dados e Segurança da Informação.</li>
+                  <li>Formação multidisciplinar que integra hardware, software, redes e segurança digital.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot" data-year="2020"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2018 - 2020</div>
+              <h3 class="timeline-title">Técnico em Serviços Jurídicos</h3>
+              <div class="timeline-place">Instituto Estadual de Ciência e Tecnologia do Maranhão.</div>
+              <p class="timeline-desc">
+                Formação voltada para análise documental, gestão de processos, legislação aplicada e conformidade regulatória, desenvolvendo uma visão estratégica sobre normas, governança e proteção de dados.
+              </p>
+              <div class="timeline-hover-content">
+                <p>Descobri a conexão entre legislação, governança e tecnologia.</p>
+                <ul>
+                  <li>Aplicação de princípios de conformidade regulatória, governança corporativa e proteção de dados.</li>
+                  <li>Base técnica para atuação em LGPD, controles internos e mitigação de riscos organizacionais.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Timeline Items -->
+          <div class="timeline-category">
+            <div class="timeline-category-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 class="timeline-category-title">Jornada Profissional</h3>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot" data-year="2022-P"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2026 - Present</div>
+              <h3 class="timeline-title">Analista de Processos & DPO (Data Protection Officer)</h3>
+              <div class="timeline-place">Honda Maranhão Motos LTDA</div>
+              <p class="timeline-desc">
+               Responsável pela criação, mapeamento, revisão e atualização de processos internos, promovendo maior eficiência operacional, padronização e conformidade organizacional.
+              </p>
+              <div class="timeline-hover-content">
+                <p>
+                  Atuando na otimização de fluxos corporativos e na implementação de práticas alinhadas à LGPD e à governança de dados.
+                </p>
+                <ul>
+                  <li>Desenvolvimento e atualização de procedimentos internos</li>
+                  <li>Atuação como DPO (Encarregado de Proteção de Dados)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot" data-year="2020-22"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2024 - 2025</div>
+              <h3 class="timeline-title">Desenvolvedor Web</h3>
+              <div class="timeline-place">Consultoria Lopes TI</div>
+              <p class="timeline-desc">
+                Desenvolvimento de aplicações web modernas, com foco em desempenho, usabilidade e experiência do usuário.
+              </p>
+              <div class="timeline-hover-content">
+                <p>
+                  Atuação na criação de interfaces responsivas, implementação de funcionalidades e manutenção de sistemas, utilizando tecnologias voltadas ao desenvolvimento front-end e integração com serviços web.
+                </p>
+                <ul>
+                  <li>Desenvolvimento de sites e aplicações web responsivas</li>
+                  <li>Foco em desempenho, acessibilidade e experiência do usuário</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot" data-year="2018-20"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2023 - 2024</div>
+              <h3 class="timeline-title">Técnico em Manutenção de Computadores</h3>
+              <div class="timeline-place">MDN Assistencia Tecnica</div>
+              <p class="timeline-desc">
+                Atuação na manutenção preventiva e corretiva de computadores, diagnóstico de falhas em hardware e software, instalação de sistemas operacionais e suporte técnico a usuários.
+              </p>
+              <div class="timeline-hover-content">
+                <p>
+                  Foi nesse período que desenvolvi uma base sólida em infraestrutura de TI, redes e funcionamento de sistemas computacionais, despertando o interesse pelas áreas de tecnologia e segurança da informação.
+                </p>
+                <ul>
+                  <li>Diagnóstico e resolução de problemas em hardware e software</li>
+                  <li>Configuração básica de redes e equipamentos de TI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style></style>
+
+  <!-- Skills Section -->
+<section id="skills">
+  <h2 class="section-title fade-in">Arsenal Digital</h2>
+
+  <div class="skills-container fade-in">
+
+    <!-- Tecnologias Desenvolvedor WEB -->
+    <div class="skill-category">
+      <h3 class="skill-category-title">Tecnologias Desenvolvedor WEB</h3>
+
+      <div class="skills-grid">
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">HTML5/CSS3</span>
+            <span class="skill-percentage">95%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="90%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">React.js</span>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Node.js</span>
+            <span class="skill-percentage">60%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="60%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">API REST</span>
+            <span class="skill-percentage">65%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="65%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">MySQL</span>
+            <span class="skill-percentage">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="75%"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Segurança de Dados -->
+    <div class="skill-category">
+      <h3 class="skill-category-title">Segurança de Dados</h3>
+
+      <div class="skills-grid">
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Lei Geral de Proteção de Dados</span>
+            <span class="skill-percentage">81%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="81%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Gestão de Riscos</span>
+            <span class="skill-percentage">92%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="92%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Mapeamento de Dados</span>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Atuação como DPO (Data Protection Officer)</span>
+            <span class="skill-percentage">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="75%"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2 class="section-title fade-in">Projetos ocultos</h2>
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-content">
+            <h3 class="project-title">Engenharia de Processos – Honda</h3>
+            <p class="project-desc">
+              Remapeamento de processos, auditoria interna e implementação de boas práticas de governança e proteção de dados.
+            </p>
+            <button
+              class="project-details-btn detail-btn"
+              data-modal="project1-modal"
+            >
+              View Details
+            </button>
+          </div>
+        </div>
+        <div class="project-card fade-in" data-modal="project2-modal">
+          <div class="project-content">
+            <h3 class="project-title">Cardápio Digital Interativo</h3>
+            <p class="project-desc">
+              Cardápio digital responsivo com integração ao WhatsApp, permitindo que clientes visualizem produtos e realizem pedidos de forma rápida, prática e intuitiva.
+            </p>
+            <button
+              class="project-details-btn detail-btn"
+              data-modal="project2-modal"
+            >
+              View Details
+            </button>
+          </div>
+        </div>
+        <div class="project-card fade-in" data-modal="project3-modal">
+          <div class="project-content">
+            <h3 class="project-title">Sistema Help Desk Corporativo</h3>
+            <p class="project-desc">
+              Sistema de gerenciamento de chamados que otimiza o suporte técnico, centraliza solicitações e agiliza a resolução de problemas.
+            </p>
+            <button
+              class="project-details-btn detail-btn"
+              data-modal="project3-modal"
+            >
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+     <section id="testimonials">
+      <h2 class="section-title fade-in">Echoes of Collaboration</h2>
+      <div class="testimonials-container fade-in">
+        <div class="testimonials-slider">
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam iste rerum id alias reiciendis, quia voluptas quo nemo facere velit, vitae, doloremque quod praesentium earum ea sint libero minus accusamus.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image"></div>
+              <div class="author-details">
+                <h4>Lorem ipsum</h4>
+                <p>titulo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima error itaque recusandae voluptate, unde voluptas commodi harum aut amet voluptatibus veritatis aperiam beatae esse facilis quaerat necessitatibus repudiandae minus!
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image"></div>
+              <div class="author-details">
+                <h4>lorem imsup</h4>
+                <p>titulo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ad porro ut magni minima blanditiis nihil veniam, dolores a, fugit quisquam commodi? Velit corrupti iste labore qui facere suscipit ducimus. 
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image"></div>
+              <div class="author-details">
+                <h4>lorem imsup</h4>
+                <p>titulo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-nav">
+          <button class="testimonial-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="testimonial-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title fade-in">Iniciar Contato</h2>
+      <div class="terminal fade-in">
+        <div class="transmission-overlay" id="transmission-overlay">
+          <div class="transmission-content">
+            <h3>TRANSMISSION IN PROGRESS</h3>
+            <div class="transmission-progress">
+              <div class="transmission-progress-bar" id="progress-bar"></div>
+            </div>
+            <p class="monospace" id="transmission-text">
+              Estabelecendo conexão segura...
+            </p>
+            <div
+              class="secret-code-reveal"
+              id="secret-code-reveal"
+              style="display: none"
+            >
+              <p>
+                Secret code received: <span class="monospace">BERGE-2026</span>
+              </p>
+              <p>Use este código para desbloquear conteúdo oculto!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal-header">
+          <div class="terminal-title">conexão_segura.exe</div>
+          <div class="terminal-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+          </div>
+        </div>
+        <div class="terminal-body">
+          <p class="monospace">Estabelecendo conexão segura...</p>
+          <p class="monospace">Conexão criptografada [✓]</p>
+          <p class="monospace">Insira seus dados para iniciar o contato:</p>
+          <div class="input-line">
+            <span class="prompt">> </span>
+            <input
+              type="text"
+              class="terminal-input"
+              placeholder="Seu nome"
+              id="contact-name"
+            />
+          </div>
+          <div class="input-line">
+            <span class="prompt">> </span>
+            <input
+              type="email"
+              class="terminal-input"
+              placeholder="Seu email"
+              id="contact-email"
+            />
+          </div>
+          <div class="input-line">
+            <span class="prompt">> </span>
+            <input
+              type="text"
+              class="terminal-input"
+              placeholder="Mensagem"
+              id="contact-message"
+            />
+          </div>
+        </div>
+        <button class="submit-btn" id="transmit-btn">Enviar</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
